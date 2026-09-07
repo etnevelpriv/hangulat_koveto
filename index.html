@@ -1,11 +1,48 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hangulat Követő</title>
-  </head>
-  <body>
-    <script type="module" src="/src/scripts/index.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hangulatnapló</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>Visszajelzés</h2>
+      </div>
+      <div class="modal-body">
+        <p id="modalText"></p>
+      </div>
+      <div class="modal-footer">
+        <button id="closeModalButton">OK</button>
+      </div>
+    </div>
+    <h1>Hangulatnapló</h1>
+    <form>
+      <p>Milyen hangulatod volt ma?</p>
+      <div class="input-group">
+        <label for="hangulat0">😀</label>
+        <input type="radio" name="hangulat" id="hangulat0">
+        <label for="hangulat1">😐</label>
+        <input type="radio" name="hangulat" id="hangulat1">
+        <label for="hangulat2">😢</label>
+        <input type="radio" name="hangulat" id="hangulat2">
+        <label for="hangulat3">😴</label>
+        <input type="radio" name="hangulat" id="hangulat3">
+        <label for="hangulat4">😡</label>
+        <input type="radio" name="hangulat" id="hangulat4">
+      </div>
+      <div class="input-group">
+        <label for="leiras">Szöveges megjegyzés</label>
+        <textarea name="leiras" id="leiras"></textarea>
+      </div>
+      <input type="button" value="Mentés">
+    </form>
+  </div>
+  <script type="module" src="/src/scripts/index.ts"></script>
+</body>
+
 </html>

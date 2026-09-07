@@ -1,9 +1,9 @@
 import type { newHangulat_Interface } from "./newHangulat_interface";
 export class Hangulat implements newHangulat_Interface {
-    hangulat: string;
+    hangulat: number;
     szoveges_leiras: string;
     datum: Date;
-    constructor(hangulat:string, szoveges_leiras:string, datum: Date) {
+    constructor(hangulat:number, szoveges_leiras:string, datum: Date) {
         this.hangulat = hangulat;
         this.szoveges_leiras = szoveges_leiras;
         this.datum = datum;

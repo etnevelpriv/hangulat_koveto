@@ -1,5 +1,5 @@
 export interface newHangulat_Interface {
-    hangulat:string;
+    hangulat:number;
     szoveges_leiras:string;
     datum:Date;
 }
