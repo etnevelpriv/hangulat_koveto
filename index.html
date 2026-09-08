@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="hu">
 
 <head>
   <meta charset="UTF-8" />
@@ -13,16 +13,16 @@
       <img src="" alt="Logo">
     </div>
     <ul class="nav-list-items">
-      <li class="nav-list-item active"><a href="./index.html">Kezdőoldal</a></li>
-      <li class="nav-list-item"><a href="./pages/hangulataim.html">Hangulataim</a></li>
-      <li class="nav-list-item"><a href="./pages/statisztika.html">Statisztika</a></li>
+      <li class="nav-list-item active"><a href="/index.html">Kezdőoldal</a></li>
+      <li class="nav-list-item"><a href="/pages/hangulataim.html">Hangulataim</a></li>
+      <li class="nav-list-item"><a href="/pages/statisztika.html">Statisztika</a></li>
     </ul>
     <button id="hamburgerButton">
       <!-- Ide kell majd valami meno hamburger ikont talalni -->
        ham
     </button>
   </nav>
-  <div class="container">
+  <div class="container" id="kezdooldalContainer">
     <div class="modal">
       <div class="modal-header">
         <h2>Visszajelzés</h2>
@@ -36,7 +36,7 @@
     </div>
     <h1>Hangulatnapló</h1>
     <form>
-      <p>Milyen hangulatod volt ma?</p>
+      <p>Milyen hangulatod van ma?</p>
       <div class="input-group">
         <label for="hangulat0">😀</label>
         <input type="radio" name="hangulat" id="hangulat0">
@@ -53,7 +53,7 @@
         <label for="leiras">Szöveges megjegyzés</label>
         <textarea name="leiras" id="leiras"></textarea>
       </div>
-      <input type="button" value="Mentés">
+      <input id="postHangulatButton" type="button" value="Mentés">
     </form>
   </div>
   <script type="module" src="/src/scripts/index.ts"></script>

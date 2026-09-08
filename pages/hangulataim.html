@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangulataim</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img src="" alt="Logo">
+        </div>
+        <ul class="nav-list-items">
+            <li class="nav-list-item"><a href="/index.html">Kezdőoldal</a></li>
+            <li class="nav-list-item active"><a href="/pages/hangulataim.html">Hangulataim</a></li>
+            <li class="nav-list-item"><a href="/pages/statisztika.html">Statisztika</a></li>
+        </ul>
+        <button id="hamburgerButton">
+            <!-- Ide kell majd valami meno hamburger ikont talalni -->
+            ham
+        </button>
+    </nav>
+  <div class="container" id="hangulataimContainer">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>Visszajelzés</h2>
+      </div>
+      <div class="modal-body">
+        <p id="modalText"></p>
+      </div>
+      <div class="modal-footer">
+        <button id="closeModalButton hide">Mégsem</button>
+        <button id="okModalButton">OK</button>
+      </div>
+    </div>
+    <h1>Hangulataim</h1>
+    <form>
+      <p>Milyen hangulatod volt?</p>
+      <div class="input-group">
+        <label for="hangulat0">😀</label>
+        <input type="radio" name="hangulat" id="hangulat0">
+        <label for="hangulat1">😐</label>
+        <input type="radio" name="hangulat" id="hangulat1">
+        <label for="hangulat2">😢</label>
+        <input type="radio" name="hangulat" id="hangulat2">
+        <label for="hangulat3">😴</label>
+        <input type="radio" name="hangulat" id="hangulat3">
+        <label for="hangulat4">😡</label>
+        <input type="radio" name="hangulat" id="hangulat4">
+      </div>
+      <div class="input-group">
+        <label for="leiras">Szöveges megjegyzés</label>
+        <textarea name="leiras" id="leiras"></textarea>
+      </div>
+      <div class="div-input">
+        <label for="datum">Dátum</label>
+        <input type="date" name="datum" id="datum">
+      </div>
+      <input type="button" value="Mentés">
+    </form>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Hangulat</th>
+            <th>Megjegyzés</th>
+            <th>Dátum</th>
+        </thead>
+        <tbody id="hangulatTableBody">
+
+        </tbody>
+    </table>
+  </div>
+  <script type="module" src="/src/scripts/index.ts"></script>
+
+</body>
+
+</html>

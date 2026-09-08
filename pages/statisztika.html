@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statisztika</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img src="" alt="Logo">
+        </div>
+        <ul class="nav-list-items">
+            <li class="nav-list-item"><a href="/index.html">Kezdőoldal</a></li>
+            <li class="nav-list-item"><a href="/pages/hangulataim.html">Hangulataim</a></li>
+            <li class="nav-list-item active"><a href="/pages/statisztika.html">Statisztika</a></li>
+        </ul>
+        <button id="hamburgerButton">
+            <!-- Ide kell majd valami meno hamburger ikont talalni -->
+            ham
+        </button>
+    </nav>
+  <div class="container" id="statisztikaContainer">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>Visszajelzés</h2>
+      </div>
+      <div class="modal-body">
+        <p id="modalText"></p>
+      </div>
+      <div class="modal-footer">
+        <button id="closeModalButton hide">Mégsem</button>
+        <button id="okModalButton">OK</button>
+      </div>
+    </div>
+    <h1>Statiszutika</h1>
+  </div>
+  <script type="module" src="/src/scripts/index.ts"></script>
+
+</body>
+
+</html>
