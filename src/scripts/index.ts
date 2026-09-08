@@ -1,3 +1,5 @@
+import "../styles/styles.css";
+
 const init = async function () {
     const scriptElement = document.createElement("script");
     if (document.getElementById("kezdooldalContainer")) {
