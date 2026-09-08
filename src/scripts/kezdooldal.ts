@@ -4,8 +4,9 @@ import { putModalText, showModal, hideModal } from "./unit/modal";
 const readFormInputs = function () {
     const hangulatElement = document.querySelector('input[name="hangulat"]:checked') as HTMLInputElement;
     const leirasElement = document.getElementById("leiras") as HTMLInputElement;
+    const hangulat = hangulatElement.value;
     const leiras = leirasElement.value;
-    if (hangulatElement && leiras) {
+    if (hangulat && leiras) {
         return {
             hangulat: hangulatElement.value,
             leiras: leiras
@@ -23,6 +24,8 @@ document.getElementById("postHangulatButton")?.addEventListener("click", async (
         const hangulat = new Hangulat(Number(inputValues.hangulat), inputValues.leiras, new Date());
         const data = await Create_Hangulat(hangulat.hangulat, hangulat.szoveges_leiras, hangulat.datum);
         console.log(data);
+        const form = document.getElementById("hangulatForm") as HTMLFormElement;
+        form.reset();
         putModalText("Sikeres hangulat feltöltés!")
         showModal();
     };

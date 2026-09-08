@@ -10,7 +10,7 @@ export class Hangulat implements newHangulat_Interface {
         if (typeof szoveges_leiras != "string") {
             throw new Error(`A leiras nincs megfeleloen megadva: ${szoveges_leiras}`);
         };
-        if (!(datum instanceof Date) || datum > (new Date())) {
+        if (!(datum instanceof Date) || datum > new Date()) {
             throw new Error(`A datum nincs megfeleloen megadva: ${datum}`);
         };
 
